@@ -110,7 +110,7 @@ const About = () => {
         {/* Tools */}
         <div className='md:p-5 p-2 bg-green-200/70 rounded-lg mt-6 md:mb-0 mb-10'>
             <h1 className='pb-5 md:mt-0 mt-2 md:text-2xl text-xl font-bold md:text-left text-center'>Tools and Infrastructures</h1>
-            <div class="grid md:grid-cols-3 grid-cols-1 gap-2 md:gap-3">
+            <div className="grid md:grid-cols-3 grid-cols-1 gap-2 md:gap-3">
             <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/tools/git.svg" alt="GIT Logo"  className='w-8 mr-3'/>
