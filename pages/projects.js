@@ -25,7 +25,7 @@ const Projects = ({ projects }) => {
       </Head>
       <main className='flex w-full flex-1 flex-col justify-center text-center'>
         <h1 className="text-3xl font-bold md:mt-20 md:mb-14 mb-10">Project</h1>
-        <div class="grid md:gap-8 gap-4 md:grid-cols-2 auto-rows-auto md:mb-0 mb-16">
+        <div className="grid md:gap-8 gap-4 md:grid-cols-2 auto-rows-auto md:mb-0 mb-16">
           {projects.map(project => {
             return (
               <Card key={project.sys.id} project={project} />

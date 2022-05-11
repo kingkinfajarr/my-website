@@ -23,7 +23,7 @@ const About = () => {
         <h1 className="text-2xl font-bold text-center md:mt-20">About Me</h1>
         <div className='mt-6'>
           <p className="mb-4 text-left leading-7">
-            Hi, I'm <span className='font-semibold'>Kingkin Fajar</span>, people who know me usually call me Kingkin (18), a Developer who also likes to make UI Design, passionate about programming after graduating from junior high school, and I continue to study at a vocational high school majoring in software engineering.
+            Hi, I&apos;m <span className='font-semibold'>Kingkin Fajar</span>, people who know me usually call me Kingkin (18), a Developer who also likes to make UI Design, passionate about programming after graduating from junior high school, and I continue to study at a vocational high school majoring in software engineering.
           </p>
           <p className="md:block text-left leading-7">
             I focus on front-end development, for now, I spend a lot of time exploring front-end development using React JS, Next JS and also exploring mobile development using Flutter
@@ -31,7 +31,7 @@ const About = () => {
         </div>
           <div className='md:p-5 p-2 bg-green-200/70 rounded-lg mt-10'>
             <h1 className='md:pb-5 md:mb-0 mb-5 md:mt-0 mt-2 md:text-2xl text-xl font-bold md:text-left text-center'>My Skills and Knowledges</h1>
-            <div class="grid md:grid-cols-3 grid-cols-1 gap-2 md:gap-3">
+            <div className="grid md:grid-cols-3 grid-cols-1 gap-2 md:gap-3">
             <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/skills/html.svg" alt="HTML Logo"  className='w-9 mr-2'/>

@@ -14,7 +14,7 @@ export default function Index() {
 
       <div className="grid md:grid-cols-3 flex-col-reverse items-center justify-center md:mb-0 md:mt-0 mt-5 mb-20">
         <div className='md:col-span-2 md:order-1 order-2 md:mt-0 mt-5 md:text-5xl text-4xl'>
-          <h1 className='font-bold md:text-left text-center leading-tight'>Hi, I'm <span className='text-green-400'>Kingkin Fajar</span> Developer and UI Design Enthusiast</h1>
+          <h1 className='font-bold md:text-left text-center leading-tight'>Hi, I&apos;m <span className='text-green-400'>Kingkin Fajar</span> Developer and UI Design Enthusiast</h1>
         </div>
         <div className='md:w-72 md:h-72 w-48 h-w-48 rounded-full md:ml-auto mx-auto md:order-2 order-1'>
           <Image
