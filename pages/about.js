@@ -32,73 +32,73 @@ const About = () => {
           <div className='md:p-5 p-2 bg-green-200/70 rounded-lg mt-10'>
             <h1 className='md:pb-5 md:mb-0 mb-5 md:mt-0 mt-2 md:text-2xl text-xl font-bold md:text-left text-center'>My Skills and Knowledges</h1>
             <div className="grid md:grid-cols-3 grid-cols-1 gap-2 md:gap-3">
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/skills/html.svg" alt="HTML Logo"  className='w-9 mr-2'/>
                 <p className='font-semibold'>HTML</p> 
               </div>
             </div>
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/skills/css.svg" alt="CSS Logo"  className='w-7 mr-3'/>
                 <p className='font-semibold'>CSS</p> 
               </div>
             </div>
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/skills/javascript.svg" alt="Javascript Logo"  className='w-7 mr-3'/>
                 <p className='font-semibold'>JavaScript</p> 
               </div>
             </div>
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/skills/php.svg" alt="PHP Logo"  className='w-10 mr-3'/>
                 <p className='font-semibold'>PHP</p> 
               </div>
             </div>
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/skills/dart.svg" alt="Dart Logo"  className='w-7 mr-3'/>
                 <p className='font-semibold'>Dart</p> 
               </div>
             </div>
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/skills/tailwind.svg" alt="Tailwind Logo"  className='w-8 mr-3'/>
                 <p className='font-semibold'>Tailwind CSS</p> 
               </div>
             </div>
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/skills/bootstrap.svg" alt="Bootstrap Logo"  className='w-8 mr-3'/>
                 <p className='font-semibold'>Bootstrap</p> 
               </div>
             </div>
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/skills/react.svg" alt="React JS Logo"  className='w-7 mr-3'/>
                 <p className='font-semibold'>React JS</p> 
               </div>
             </div>
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/skills/laravel.svg" alt="Laravel Logo"  className='w-7 mr-3'/>
                 <p className='font-semibold'>Laravel</p> 
               </div>
             </div>
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/skills/nextjs.svg" alt="Next JS Logo"  className='w-7 mr-3'/>
                 <p className='font-semibold'>Next JS</p> 
               </div>
             </div>
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/skills/flutter.svg" alt="Flutter Logo"  className='w-5 mr-3'/>
                 <p className='font-semibold'>Flutter</p> 
               </div>
             </div>
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/skills/mysql.svg" alt="MySql Logo"  className='w-6 mr-3'/>
                 <p className='font-semibold'>My SQL</p> 
@@ -111,37 +111,37 @@ const About = () => {
         <div className='md:p-5 p-2 bg-green-200/70 rounded-lg mt-6 md:mb-0 mb-10'>
             <h1 className='pb-5 md:mt-0 mt-2 md:text-2xl text-xl font-bold md:text-left text-center'>Tools and Infrastructures</h1>
             <div className="grid md:grid-cols-3 grid-cols-1 gap-2 md:gap-3">
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/tools/git.svg" alt="GIT Logo"  className='w-8 mr-3'/>
                 <p className='font-semibold'>GIT</p> 
               </div>
             </div>
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/tools/figma.svg" alt="Figma Logo"  className='w-4 mr-3'/>
                 <p className='font-semibold'>Figma</p> 
               </div>
             </div>
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/tools/vscode.svg" alt="VS Code Logo"  className='w-7 mr-3'/>
                 <p className='font-semibold'>Visual Studio Code</p> 
               </div>
             </div>
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/tools/postman.svg" alt="Postman Logo"  className='w-9 mr-3'/>
                 <p className='font-semibold'>Postman</p> 
               </div>
             </div>
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/tools/vercel.svg" alt="Vercel Logo"  className='w-16 mr-3'/>
                 <p className='font-semibold'>Vercel</p> 
               </div>
             </div>
-            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-green-200/70 transition-all duration-200 hover:translate-x-1'>
+            <div className='bg-green-100 h-16 rounded-lg items-center flex hover:bg-transparent transition-all duration-200 hover:translate-x-1'>
               <div className='flex items-center mx-auto'>
                 <img src="./images/tools/bitbucket.svg" alt="Bitbucket Logo"  className='w-7 mr-3'/>
                 <p className='font-semibold'>Bitbucket</p> 
