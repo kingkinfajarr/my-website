@@ -1,5 +1,5 @@
-import { createClient } from "contentful";
 import Head from "next/head";
+import { createClient } from "contentful";
 import Card from "../../components/blog/Card";
 
 const client = createClient({
@@ -23,8 +23,10 @@ const Blog = ({ blogs }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='flex w-full flex-1 flex-col md:items-center md:justify-center text-center'> 
-      <h1 className="text-3xl font-bold md:mt-20 md:mb-14 mb-10">Blog</h1>
-      <p></p>
+      <h1 className="md:text-lg text-base text-center md:mt-20 uppercase text-green-400">My Blog</h1>
+      <div className="md:max-w-2xl">
+        <h3 className='text-center md:text-4xl text-2xl font-semibold tracking-wide mt-2 md:mb-12 mb-8 capitalize'>Kinds of content that may be useful for you</h3>
+      </div>
         {blogs.map(blog => {
           return (
             <Card key={blog.sys.id} blog={blog} />
