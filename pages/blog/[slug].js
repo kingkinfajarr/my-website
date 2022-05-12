@@ -1,8 +1,7 @@
-import Image from "next/image";
 import Head from "next/head";
+import Image from "next/image";
 import { createClient } from "contentful";
 import ReactMarkdown from 'react-markdown';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -32,8 +31,6 @@ export const getStaticProps = async ({ params }) => {
 
  const BlogDetail = ({ blog }) => {
   const { title, thumbnail, headline, content, created, tag } = blog.fields;
-
-  //  console.log(blog);
    return (
       <div className="flex md:min-h-screen flex-col items-center justify-center md:px-40 px-4">
         <Head>
@@ -45,7 +42,7 @@ export const getStaticProps = async ({ params }) => {
             <Image src={'https:' + thumbnail.fields.file.url} width={thumbnail.fields.file.details.image.width} height={thumbnail.fields.file.details.image.height} />
 
           </div>
-          <h1 className="md:text-4xl text-2xl font-bold md:my-7 my-4">{title}</h1>
+          <h1 className="md:text-4xl text-3xl font-bold md:my-7 my-4">{title}</h1>
           <h2 className="text-left">{headline}</h2>
           <ReactMarkdown components={{ 
             h1: (props) => <h1 className="text-left text-4xl font-bold">{props.children}</h1>,
@@ -54,7 +51,13 @@ export const getStaticProps = async ({ params }) => {
             hr: (props) => <hr className="my-3 border-0" {...props.children}/>,
             p: (props) => <p className="text-left text-md leading-relaxed">{props.children}</p>,
            }} className="text-left">{content}</ReactMarkdown>
-          <p className="">{tag}</p>
+           <div className="flex md:mt-5 mt-4 md:mb-0 mb-14">
+            {tag.map(tags => {
+              return (
+                <div className='mr-2 bg-green-200 rounded px-2 py-1 font-medium'>{tags}</div>
+              );
+            })}
+          </div>
         </main>
       </div>
     );
