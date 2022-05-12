@@ -11,7 +11,7 @@ const Card = ({ project }) => {
         </div>
         <div className="text-center">
           <h1 className="font-bold md:text-2xl text-xl md:my-5 my-3">{ title }</h1>
-          <p className="text-gray-400">
+          <p>
             { desc }
           </p>
           <div className={demo !== '-' ? "grid grid-cols-2 gap-2 justify-center mt-5" : "grid gap-2 justify-center mt-5 grid-cols-1"}>
