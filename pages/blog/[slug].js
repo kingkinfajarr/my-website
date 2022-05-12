@@ -51,12 +51,8 @@ export const getStaticProps = async ({ params }) => {
             hr: (props) => <hr className="my-3 border-0" {...props.children}/>,
             p: (props) => <p className="text-left text-md leading-relaxed">{props.children}</p>,
            }} className="text-left">{content}</ReactMarkdown>
-           <div className="flex md:mt-5 mt-4 md:mb-0 mb-14" key={blog.sys.id}>
-            {tag.map(tags => {
-              return (
-                <div className='mr-2 bg-green-200 rounded px-2 py-1 font-medium'>{tags}</div>
-              );
-            })}
+           <div className="flex md:mt-5 mt-4 md:mb-0 mb-14">
+            <div className='mr-2 bg-green-200 rounded px-2 py-1 font-medium'>{tag}</div>
           </div>
         </main>
       </div>

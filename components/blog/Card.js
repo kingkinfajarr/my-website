@@ -3,7 +3,6 @@ import Image from 'next/image';
 
 const Card = ({ blog }) => {
   const { title, slug, thumbnail, headline, content, created, tag } = blog.fields;
-  console.log(blog);
   return ( 
     <>
     <Link href={'/blog/' + slug}>
@@ -17,12 +16,8 @@ const Card = ({ blog }) => {
             <h2 className="md:text-3xl text-lg font-bold hover:underline transition-all duration-200 cursor-pointer my-3">{title}</h2>
           </Link>
           <p className="mb-4 truncate">{headline}</p>
-          <div className="flex" key={blog.sys.id}>
-            {tag.map(tags => {
-              return (
-                <div className='mr-2 bg-green-200 rounded px-2 py-1 font-medium'>{tags}</div>
-              );
-            })}
+          <div className="flex">
+            <div className='mr-2 bg-green-200 rounded px-2 py-1 font-medium'>{tag}</div>
           </div>
         </div>
       </div>
