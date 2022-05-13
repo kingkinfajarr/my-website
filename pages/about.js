@@ -12,7 +12,7 @@ const About = () => {
   return ( 
     <div className="flex min-h-screen flex-col items-center justify-center md:px-40 px-4">
       <Head>
-        <title>Contact | Kingkin Fajar</title>
+        <title>About | Kingkin Fajar</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='flex w-full flex-1 flex-col'>
