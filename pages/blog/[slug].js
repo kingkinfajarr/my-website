@@ -30,7 +30,7 @@ export const getStaticProps = async ({ params }) => {
 };
 
  const BlogDetail = ({ blog }) => {
-  const { title, thumbnail, headline, content, created, tag } = blog.fields;
+  const { title, thumbnail, content, tag } = blog.fields;
    return (
       <div className="flex md:min-h-screen flex-col items-center justify-center md:px-40 px-4">
         <Head>
@@ -43,12 +43,11 @@ export const getStaticProps = async ({ params }) => {
 
           </div>
           <h1 className="md:text-4xl text-3xl font-bold md:my-7 my-4">{title}</h1>
-          <h2 className="text-left">{headline}</h2>
           <ReactMarkdown components={{ 
             h1: (props) => <h1 className="text-left text-4xl font-bold">{props.children}</h1>,
             h2: (props) => <h2 className="text-left text-3xl font-bold">{props.children}</h2>,
-            h3: (props) => <h3 className="text-left text-2xl font-bold">{props.children}</h3>,
-            hr: (props) => <hr className="my-3 border-0" {...props.children}/>,
+            h3: (props) => <h3 className="text-left text-2xl mb-1 font-bold">{props.children}</h3>,
+            hr: (props) => <hr className="my-2 border-0" {...props.children}/>,
             p: (props) => <p className="text-left text-md leading-relaxed">{props.children}</p>,
            }} className="text-left">{content}</ReactMarkdown>
            <div className="flex md:mt-5 mt-4 md:mb-0 mb-14">
