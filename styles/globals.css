@@ -21,3 +21,15 @@ html {
   border-radius: 4px;
   border: 2px solid #E8FFF5;
 }
+.empty-4-6 .btn-back{
+  background-color: #27C499;
+  transition: 0.3s;
+}
+.empty-4-6 .title-text{
+  color: #272E35;
+}    
+@media(min-width: 425px){
+  .empty-4-6 .title-text{
+    font-size: 40px;
+  }
+} 
