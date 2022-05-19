@@ -16,7 +16,6 @@ export async function getStaticProps() {
 }
 
 const Projects = ({ projects }) => {
-  console.log(projects);
   return ( 
     <div className='flex min-h-screen flex-col items-center justify-center md:px-40 px-4'>
       <Head>
