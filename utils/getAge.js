@@ -1,6 +1,6 @@
 const getAge = () => {
-  const date = Date.now() - new Date('2003, 09, 11').getTime();
-  const age = new Date(date);
+  const dateNow = Date.now() - new Date('2003, 09, 11').getTime();
+  const age = new Date(dateNow);
 
   return Math.abs(age.getUTCFullYear() - 1970);
 };
