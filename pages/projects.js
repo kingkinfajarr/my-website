@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { createClient } from "contentful";
 import Card from '../components/projects/Card';
+import { NextSeo } from 'next-seo'
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -17,6 +18,25 @@ export async function getStaticProps() {
 
 const Projects = ({ projects }) => {
   return ( 
+    <>
+    <NextSeo
+      title='Kingkin Fajar'
+      titleTemplate="Kingkin Fajar"
+        defaultTitle="Kingkin Fajar"
+        description="Hi, I'm Kingkin Fajar Developer and UI Design Enthusiast"
+        canonical="https://kingkinfajarr.my.id"
+      openGraph={{
+        type: "website",
+        url: "https://kingkinfajarr.my.id",
+        title: "Kingkin Fajar",
+        description: "Hi, I'm Kingkin Fajar Developer and UI Design Enthusiast",
+      }}
+      twitter={{
+        handle: "@kingkinfajarr",
+        site: "@kingkinfajarr",
+        cardType: "summary_large_image",
+      }}
+    />
     <div className='flex min-h-screen flex-col items-center justify-center md:px-40 px-4'>
       <Head>
         <title>Project | Kingkin Fajar</title>
@@ -36,6 +56,7 @@ const Projects = ({ projects }) => {
         </div>
       </main>
     </div>
+    </>
   );
 }
  

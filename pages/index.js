@@ -1,9 +1,29 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import profile from '../public/profile-image.jpg';
+import { NextSeo } from 'next-seo';
 
 export default function Index() {
   return (
+    <>
+    <NextSeo
+      title='Kingkin Fajar'
+      titleTemplate="Kingkin Fajar"
+        defaultTitle="Kingkin Fajar"
+        description="Hi, I'm Kingkin Fajar Developer and UI Design Enthusiast"
+        canonical="https://kingkinfajarr.my.id"
+      openGraph={{
+        type: "website",
+        url: "https://kingkinfajarr.my.id",
+        title: "Kingkin Fajar",
+        description: "Hi, I'm Kingkin Fajar Developer and UI Design Enthusiast",
+      }}
+      twitter={{
+        handle: "@kingkinfajarr",
+        site: "@kingkinfajarr",
+        cardType: "summary_large_image",
+      }}
+    />
     <div className='flex md:min-h-screen min-h-full flex-col items-center justify-center md:px-40 px-4'>
       <Head>
         <title>Home | Kingkin Fajar</title>
@@ -27,5 +47,6 @@ export default function Index() {
       </div>
       </main>
     </div>
+    </>
   );
 }
