@@ -7,6 +7,7 @@ import {
   FaInstagram,
   FaEnvelope,
 } from 'react-icons/fa';
+import getAge from '../utils/getAge';
 
 const About = () => {
   return ( 
@@ -22,7 +23,7 @@ const About = () => {
         </div>
         <div className='mt-10'>
           <p className="mb-4 text-left leading-7">
-            Hi, I&apos;m <span className='font-semibold'>Kingkin Fajar Anifianto</span>, people who know me usually call me <span className='font-semibold'>Kingkin</span> (18), Developer who also likes to make UI Design, passionate about programming after graduating from junior high school, I continue to study at a vocational high school majoring in software engineering.
+            Hi, I&apos;m <span className='font-semibold'>Kingkin Fajar Anifianto</span>, people who know me usually call me <span className='font-semibold'>Kingkin</span> ({getAge()} years old), Developer who also likes to make UI Design, passionate about programming after graduating from junior high school, I continue to study at a vocational high school majoring in software engineering.
           </p>
           <p className="md:block text-left leading-7">
             I focus on front-end development, for now, I spend a lot of time to explore about front-end development using React JS, Next JS and also explore about mobile development using Flutter.
