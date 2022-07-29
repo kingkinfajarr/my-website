@@ -48,7 +48,7 @@ export const getStaticProps = async ({ params }) => {
             h3: (props) => <h3 className="text-left text-2xl mb-1 font-bold">{props.children}</h3>,
             hr: (props) => <hr className="mt-3 border-0" {...props.children}/>,
             p: (props) => <p className="text-left text-md leading-relaxed">{props.children}</p>,
-            blockquote: (props) => <div className="text-left p-2 border-l-4 border-green-300 my-3">
+            blockquote: (props) => <div className="text-left p-2 border-l-4 border-green-200 my-3">
               {props.children}
             </div>
            }} className="text-left">{content}</ReactMarkdown>
