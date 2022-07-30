@@ -38,8 +38,8 @@ export const getStaticProps = async ({ params }) => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className="flex w-full flex-1 flex-col items-center justify-center text-center">
-          <div className="w-full md:h-96 h-64 bg-slate-300 rounded-lg object-cover overflow-hidden md:mt-20">
-            <Image src={'https:' + thumbnail.fields.file.url} width={thumbnail.fields.file.details.image.width} height={thumbnail.fields.file.details.image.height} />
+          <div className="md:w-full md:h-96 h-64 bg-slate-300 rounded-lg bg-cover bg-center md:mt-20">
+            <Image src={'https:' + thumbnail.fields.file.url} className="bg-cover bg-center" />
           </div>
           <h1 className="md:text-4xl text-3xl font-bold md:my-7 my-4">{title}</h1>
           <ReactMarkdown components={{ 
