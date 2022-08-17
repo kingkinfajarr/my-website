@@ -12,7 +12,7 @@ Router.events.on("routeChangeComplete", nProgress.done);
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-      <NextSeo
+      <DefaultSeo
         title='Kingkin Fajar Anifianto'
         titleTemplate="Kingkin Fajar Anifianto"
         defaultTitle="Kingkin Fajar Anifianto"
