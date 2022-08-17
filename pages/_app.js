@@ -12,16 +12,17 @@ Router.events.on("routeChangeComplete", nProgress.done);
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-      <DefaultSeo 
-        title='Kingkin Fajar'
-        titleTemplate="Kingkin Fajar"
-          defaultTitle="Kingkin Fajar"
-          description="Hi, I'm Kingkin Fajar Developer and UI Design Enthusiast"
-          canonical="https://kingkinfajarr.my.id"
+      <NextSeo
+        title='Kingkin Fajar Anifianto'
+        titleTemplate="Kingkin Fajar Anifianto"
+        defaultTitle="Kingkin Fajar Anifianto"
+        description="Hi, I'm Kingkin Fajar Developer and UI Design Enthusiast"
+        canonical="https://kingkinfajarr.my.id"
         openGraph={{
           type: "website",
           url: "https://kingkinfajarr.my.id",
-          title: "Kingkin Fajar",
+          site_name: "Kingkin Fajar Anifianto",
+          title: "Kingkin Fajar Anifianto",
           description: "Hi, I'm Kingkin Fajar Developer and UI Design Enthusiast",
         }}
         twitter={{
@@ -31,11 +32,11 @@ function MyApp({ Component, pageProps }) {
         }}
         additionalMetaTags={[
           { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
-          { name: 'apple-mobile-web-app-title', content: 'Kingkin Fajar' },
-          { name: 'application-name', content: 'Kingkin Fajar' },
+          { name: 'apple-mobile-web-app-title', content: 'Kingkin Fajar Anifianto' },
+          { name: 'application-name', content: 'Kingkin Fajar Anifianto' },
           {
             name: 'google-site-verification',
-            content: 'w0K-2LpCNTZjm0SAM9nJJ9S-tS4BZW8oB8-UwkMsrQ4',
+            content: 'St3mL9W0jVuct39rx9f1NgYC6YTvTasfkjoE_l9T47k',
           },
           { name: 'msapplication-TileColor', content: '#da532c' },
           { name: 'msapplication-config', content: '/favicon/browserconfig.xml' },
