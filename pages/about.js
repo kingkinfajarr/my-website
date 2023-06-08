@@ -21,7 +21,7 @@ const About = () => {
         canonical='https://kingkinfajarr.my.id'
         openGraph={{
           type: "website",
-          url: "https://kingkinfajarr.my.id",
+          url: "https://kingkinfajarr.space",
           site_name: "Kingkin Fajar Anifianto",
           title: "Kingkin Fajar Anifianto",
           description:
@@ -44,7 +44,7 @@ const About = () => {
           { name: "application-name", content: "Kingkin Fajar Anifianto" },
           {
             name: "google-site-verification",
-            content: "St3mL9W0jVuct39rx9f1NgYC6YTvTasfkjoE_l9T47k",
+            content: "bHVig-zFWgxVxw0D-0FhPsgs88E6RiUIThiL83Mn79M",
           },
           { name: "msapplication-TileColor", content: "#da532c" },
           {
