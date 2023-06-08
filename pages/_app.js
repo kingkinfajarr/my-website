@@ -17,10 +17,10 @@ function MyApp({ Component, pageProps }) {
         titleTemplate="Kingkin Fajar Anifianto"
         defaultTitle="Kingkin Fajar Anifianto"
         description="Hi, I'm Kingkin Fajar Developer and UI Design Enthusiast"
-        canonical="https://kingkinfajarr.my.id"
+        canonical="https://kingkinfajarr.space"
         openGraph={{
           type: "website",
-          url: "https://kingkinfajarr.my.id",
+          url: "https://kingkinfajarr.space",
           site_name: "Kingkin Fajar Anifianto",
           title: "Kingkin Fajar Anifianto",
           description: "Hi, I'm Kingkin Fajar Developer and UI Design Enthusiast",
