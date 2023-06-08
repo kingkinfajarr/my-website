@@ -18,7 +18,7 @@ const About = () => {
         titleTemplate='Kingkin Fajar Anifianto'
         defaultTitle='Kingkin Fajar Anifianto'
         description="Hi, I'm Kingkin Fajar Developer and UI Design Enthusiast"
-        canonical='https://kingkinfajarr.my.id'
+        canonical='https://kingkinfajarr.space'
         openGraph={{
           type: "website",
           url: "https://kingkinfajarr.space",
