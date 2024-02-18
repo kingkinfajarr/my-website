@@ -1,0 +1,21 @@
+{
+  "description": [
+    "Hi, my name is <strong>Kingkin Fajar Anifianto</strong>, usually called <strong>Kingkin</strong>, a Software Developer who likes creating simple and clean interaction designs.",
+    "Interested in programming when graduated from junior high school, and after that, I continued to vocational school majoring in software engineering. Currently studying at Telkom University.",
+    "For now focus on frontend development, in mobile using <strong>Flutter</strong> and websites using <strong>React.js</strong> and <strong>Next.js</strong>."
+  ],
+  "skills": [
+    {
+      "name": "Frontend",
+      "items": ["Vite", "Flutter", "Next.js", "React", "Tailwind CSS"]
+    },
+    {
+      "name": "Languages",
+      "items": ["Dart", "CSS & HTML", "JavaScript", "PHP", "TypeScript"]
+    },
+    {
+      "name": "Backend",
+      "items": ["Firebase", "PostgreSQL", "MySQL", "Node.js"]
+    }
+  ]
+}
