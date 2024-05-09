@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from 'next'
 import '@/styles/globals.css'
 import { ThemeProvider } from '@/components'
-import { cn } from '@/shared'
-import { Poppins as FontSans, Fira_Code as FontMono } from 'next/font/google'
+import { cn } from '@/lib'
+import { Figtree as FontSans, Fira_Code as FontMono } from 'next/font/google'
 
 // export const viewport: Viewport = {
 //   width: 'device-width',
@@ -16,7 +16,7 @@ import { Poppins as FontSans, Fira_Code as FontMono } from 'next/font/google'
 
 const fontSans = FontSans({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '500', '600', '700', '800', '900'],
   variable: '--font-sans',
   display: 'swap',
 })

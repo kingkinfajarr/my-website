@@ -1,5 +1,5 @@
 import { PageContainer } from '@/components'
-import { cn } from '@/shared'
+import { cn } from '@/lib'
 import React from 'react'
 import { allAbouts } from 'contentlayer/generated'
 import parser from 'react-html-parser'

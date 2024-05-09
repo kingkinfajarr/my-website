@@ -1,0 +1,43 @@
+{
+  "works": [
+    {
+      "company": "Deptech Digital Indonesia",
+      "image": "/assets/work-experience/deptech.jpeg",
+      "role": "Software Developer",
+      "start_date": "10 April 2023",
+      "end_date": "Present",
+      "description": [
+        "Developing Mobile Apps using Flutter",
+        "Implementing Clean Architecture with Clean Code",
+        "Implementing Bloc state management",
+        "Ensure Quality code with Unit Test",
+        "Develop Web Apps using Angular.js with Typescript",
+        "Ensure web performance and security"
+      ]
+    },
+    {
+      "company": "Bryte Pelita Indonesia",
+      "image": "/assets/work-experience/bryte.jpeg",
+      "role": "Mobile Engineer",
+      "start_date": "1 Desember 2022",
+      "end_date": "31 Maret 2023",
+      "description": ["Developing Education Apps using Flutter"]
+    },
+    {
+      "company": "Inovasi Bakti Nusantara",
+      "image": "/assets/work-experience/ibn.jpeg",
+      "role": "Junior Programmer",
+      "start_date": "1 Mei 2022",
+      "end_date": "30 November 2022",
+      "description": ["Developing Mobile Apps using Flutter"]
+    },
+    {
+      "company": "Inovasi Bakti Nusantara",
+      "image": "/assets/work-experience/ibn.jpeg",
+      "role": "Intern Junior Programmer",
+      "start_date": "1 Februari 2022",
+      "end_date": "31 April 2022",
+      "description": ["Developing Mobile Apps using Flutter"]
+    }
+  ]
+}

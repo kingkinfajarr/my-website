@@ -1,6 +1,6 @@
 import React from 'react'
 import { cva, type VariantProps } from 'class-variance-authority'
-import { cn } from '@/shared'
+import { cn } from '@/lib'
 
 interface HeadingProps
   extends React.BaseHTMLAttributes<HTMLHeadingElement>,

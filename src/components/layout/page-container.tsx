@@ -1,6 +1,6 @@
 import React from 'react'
 import { Footer, Navbar } from '@/components'
-import { cn } from '@/shared'
+import { cn } from '@/lib'
 
 type PageContainerProps = {
   children?: React.ReactNode

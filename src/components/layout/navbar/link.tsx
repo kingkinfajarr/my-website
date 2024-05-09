@@ -1,7 +1,7 @@
 import React from 'react'
 import Link, { type LinkProps } from 'next/link'
 
-import { cn } from '@/shared/utils'
+import { cn } from '@/lib/utils'
 
 export const NavigationLink = ({
   href,
@@ -22,7 +22,7 @@ export const NavigationLink = ({
     <Link
       href={href}
       className={cn(
-        'flex items-center space-x-2 rounded-full px-5 py-2 font-medium tracking-wide transition-colors ',
+        'flex items-center space-x-2 rounded-full px-4 py-2 font-medium tracking-wide transition-colors ',
         'text-white dark:text-black',
         {
           'bg-secondary': isActive,

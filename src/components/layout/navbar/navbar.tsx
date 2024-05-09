@@ -14,7 +14,7 @@ import {
 import { Menu } from 'react-feather'
 import { useNavigationState } from '@/hooks/use-nav-state'
 import { usePathname } from 'next/navigation'
-import { cn } from '@/shared'
+import { cn } from '@/lib'
 import ToggleTheme from '@/components/theme/toggle'
 
 const MobileNavigation = ({
@@ -29,7 +29,7 @@ const MobileNavigation = ({
   <>
     <Drawer open={isOpen} onOpenChange={setIsOpen}>
       <DrawerTrigger asChild>
-        <div className="fixed bottom-0 right-0 z-20 m-2 inline-flex  shadow-sm sm:hidden">
+        <div className="fixed bottom-0 right-0 z-20 mb-16 mr-4 block shadow-sm sm:hidden">
           <Menu className="h-[1.2rem] w-[1.2rem] scale-100" />
           <span className="sr-only">Open menu</span>
         </div>
@@ -91,9 +91,11 @@ export const Navbar = ({ className }: NavbarProps) => {
   return (
     <>
       <nav
-        className={cn('sticky top-0 mx-auto hidden items-center py-8 sm:flex')}
+        className={cn(
+          'sticky top-0 z-50 mx-auto hidden items-center py-8 sm:flex',
+        )}
       >
-        <div className="rounded-full bg-primary p-3 shadow-md">
+        <div className="rounded-full bg-primary p-2 shadow-md">
           <ul className=" flex w-full items-center rounded-lg">
             {navigations.map(({ name, href }) => (
               <li key={name}>
@@ -102,14 +104,16 @@ export const Navbar = ({ className }: NavbarProps) => {
                   currentPath={pathname}
                   isCollapse={isCollapse}
                 >
-                  <span className={cn({ 'sr-only': isCollapse })}>{name}</span>
+                  <span className={cn('text-sm', { 'sr-only': isCollapse })}>
+                    {name}
+                  </span>
                 </NavigationLink>
               </li>
             ))}
           </ul>
         </div>
 
-        <ToggleTheme />
+        {/* <ToggleTheme /> */}
       </nav>
 
       <MobileNavigation

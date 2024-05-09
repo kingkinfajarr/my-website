@@ -1,4 +1,4 @@
-import { cn } from '@/shared'
+import { cn } from '@/lib'
 import React from 'react'
 
 type AboutCardProps = {

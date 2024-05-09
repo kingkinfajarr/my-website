@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import { env } from '@/shared'
+import { env } from '@/lib'
 
 export default function robots(): MetadataRoute.Robots {
   return {

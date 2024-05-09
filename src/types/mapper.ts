@@ -7,3 +7,15 @@ export const Skill = defineNestedType(() => ({
     items: { type: 'list', of: { type: 'string' }, required: true },
   },
 }))
+
+export const Works = defineNestedType(() => ({
+  name: 'Works',
+  fields: {
+    company: { type: 'string', required: true },
+    image: { type: 'string', required: true },
+    role: { type: 'string', required: true },
+    start_date: { type: 'string', required: true },
+    end_date: { type: 'string', required: true },
+    description: { type: 'list', of: { type: 'string' }, required: true },
+  },
+}))

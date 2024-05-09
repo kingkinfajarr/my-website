@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import { env } from '@/shared'
+import { env } from '@/lib'
 import { navigationItems } from '@/components'
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -13,13 +13,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   })
 
-  //   const posts = allPosts.map((post) => {
-  //     return {
-  //       url: `${websiteUrl}/blog/${post.slug}`,
-  //       lastModified: new Date(post.updatedAt),
-  //       priority: 0.5,
-  //     }
-  //   })
+    // const posts = allPosts.map((post) => {
+    //   return {
+    //     url: `${websiteUrl}/blog/${post.slug}`,
+    //     lastModified: new Date(post.updatedAt),
+    //     priority: 0.5,
+    //   }
+    // })
 
   return [...navigations]
 }

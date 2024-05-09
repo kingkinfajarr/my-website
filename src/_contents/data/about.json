@@ -17,5 +17,15 @@
       "name": "Backend",
       "items": ["Firebase", "PostgreSQL", "MySQL", "Node.js"]
     }
+  ],
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/kingkinfajarr/"
+    },
+    {
+      "name": "GitHub",
+      "link": "https://github.com/kingkinfajarr"
+    }
   ]
 }

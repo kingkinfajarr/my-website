@@ -4,8 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Kingkin Fajar Anifianto',
     short_name: 'Kingkin Fajar',
-    description:
-      'A software developer specializing in JavaScript and web development.',
+    description: '.',
     start_url: '/',
     icons: [
       {
