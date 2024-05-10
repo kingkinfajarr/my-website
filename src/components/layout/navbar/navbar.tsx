@@ -95,7 +95,7 @@ export const Navbar = ({ className }: NavbarProps) => {
           'sticky top-0 z-50 mx-auto hidden items-center py-8 sm:flex',
         )}
       >
-        <div className="rounded-full bg-primary p-2 shadow-md">
+        <div className="rounded-full bg-primary text-dark p-2 shadow-md">
           <ul className=" flex w-full items-center rounded-lg">
             {navigations.map(({ name, href }) => (
               <li key={name}>
