@@ -25,7 +25,7 @@ export const NavigationLink = ({
         'flex items-center space-x-2 rounded-full px-4 py-2 font-medium tracking-wide transition-colors ',
         'text-white dark:text-black',
         {
-          'bg-secondary': isActive,
+          'bg-g200': isActive,
         },
       )}
       {...rest}

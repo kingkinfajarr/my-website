@@ -29,8 +29,10 @@ const MobileNavigation = ({
   <>
     <Drawer open={isOpen} onOpenChange={setIsOpen}>
       <DrawerTrigger asChild>
-        <div className="fixed bottom-0 right-0 z-20 mb-16 mr-4 block shadow-sm sm:hidden">
-          <Menu className="h-[1.2rem] w-[1.2rem] scale-100" />
+        <div className="fixed right-0 top-0 z-20 mr-5 mt-5 block shadow-sm sm:hidden">
+          <div className="bg-g400 rounded-md p-2">
+            <Menu className=" h-[1.2rem] w-[1.2rem] scale-100" />
+          </div>
           <span className="sr-only">Open menu</span>
         </div>
       </DrawerTrigger>
@@ -95,7 +97,7 @@ export const Navbar = ({ className }: NavbarProps) => {
           'sticky top-0 z-50 mx-auto hidden items-center py-8 sm:flex',
         )}
       >
-        <div className="rounded-full bg-primary text-dark p-2 shadow-md">
+        <div className="bg-g400 rounded-full p-2 text-light shadow-md backdrop-blur-2xl">
           <ul className=" flex w-full items-center rounded-lg">
             {navigations.map(({ name, href }) => (
               <li key={name}>
