@@ -1,5 +1,4 @@
 'use client'
-
 import { PageContainer } from '@/components'
 import { Card, CardContent } from '@/components/ui/card'
 import {
@@ -10,112 +9,136 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel'
 import { Heading } from '@/components/ui/heading'
+import { useIsLargeScreen } from '@/hooks'
 import { cn } from '@/lib'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowDownCircle } from 'react-feather'
 
 export default function Home() {
-  const scrollToProjects = () => {
-    const projectsSection = document.getElementById('projects')
-
-    if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
+  const { isLargeScreen } = useIsLargeScreen()
 
   return (
     <PageContainer withFooter withNavbar>
       <main className="flex min-h-screen flex-col items-center justify-center">
-        <section className="relative my-28 ">
-          <div
-            className={cn(
-              'absolute left-0 -z-50 mt-6 h-3 w-60 rotate-0  bg-gradient-to-r from-orange-500 px-11',
-              'sm:mx-11 sm:mt-[60px] sm:h-3 sm:w-[520px]',
-            )}
-          ></div>
-          <Heading
-            className={cn(
-              'text z-10 text-3xl font-semibold tracking-tight',
-              'sm:px-12 sm:text-[80px] sm:leading-[81px]',
-            )}
-            variant={'h1'}
-          >
-            Kingkin Fajar,
-            <br /> Software Developer Specialized in Frontend Development
+        <section className={cn('mt-20', 'sm:mb-28 sm:mt-32')}>
+          <Heading className="mx-0 sm:mx-12">
+            <span
+              className={cn(
+                'mb-3 block text-[32px] font-semibold lowercase tracking-tighter text-gt400',
+                'sm:text-[64px] ',
+              )}
+            >
+              Kingkin Fajar.
+            </span>
+            <span
+              className={cn(
+                'block text-5xl font-bold leading-[49px] tracking-[-1.8px]',
+                'sm:text-[88px] sm:leading-[88px] sm:tracking-tight',
+              )}
+            >
+              Software Developer Specialized in Frontend Development.
+            </span>
           </Heading>
-          <button
-            className="mx-auto mt-10 flex animate-bounce items-center justify-center"
-            onClick={scrollToProjects}
+          <p
+            className={cn(
+              'mx-0 mb-10 mt-4 max-w-[680px] text-xl leading-snug opacity-70 sm:mx-12',
+              'sm:mt-9 sm:text-2xl sm:tracking-wide',
+            )}
           >
-            <ArrowDownCircle size={36} />
-          </button>
+            I am a software developer specialized in frontend development. I
+            love to create simple and clean user interface design.
+          </p>
         </section>
 
-        <section className="mt-20 grid w-full grid-cols-3 gap-4" id="projects">
-          <div className="col-span-2 bg-slate-50">
-            <Image
-              src={'https://picsum.photos/200/150'}
-              alt="blablab"
-              width={0}
-              height={120}
-              className="flex w-full items-center object-cover"
-            />
-          </div>
-          <div className="col-span-1 flex flex-col gap-4">
-            <div className="bg-slate-200">
+        <section className="mt-24">
+          <Heading className={cn('flex text-4xl', ' sm:text-6xl')}>
+            <span>🚀&nbsp;</span>
+            <span>My Projects</span>
+          </Heading>
+          <p
+            className={cn(
+              'mb-10 mt-4 max-w-[680px] text-xl leading-snug opacity-70',
+              'sm:mt-9 sm:text-2xl',
+            )}
+          >
+            Some of the projects that I have worked on, from personal projects
+            to working projects.
+          </p>
+          <div className={cn('grid w-full gap-3', 'sm:grid-cols-3')}>
+            <div className="group relative transition-all duration-300 sm:col-span-2">
               <Image
                 src={'https://picsum.photos/200/150'}
                 alt="blablab"
                 width={0}
                 height={120}
-                className="flex w-full items-center object-cover"
+                className="flex h-full w-full items-center rounded-lg object-cover"
               />
+              <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <a
+                  href="link-ke-detail-project"
+                  className="text-center text-sm font-semibold lowercase underline"
+                >
+                  View Project
+                </a>
+              </div>
             </div>
-            <div className="bg-slate-500">
+
+            <div className="flex flex-col gap-y-3 sm:col-span-1">
               <Image
                 src={'https://picsum.photos/200/150'}
                 alt="blablab"
                 width={0}
                 height={120}
-                className="flex w-full items-center object-cover"
+                className="flex h-full w-full items-center rounded-lg object-cover"
+              />
+              <Image
+                src={'https://picsum.photos/200/150'}
+                alt="blablab"
+                width={0}
+                height={120}
+                className="flex h-full w-full items-center rounded-lg object-cover"
               />
             </div>
           </div>
         </section>
-        <Link href={'/projects'} className="my-2 text-center underline">
-          view all projects
+        <Link
+          href={'/projects'}
+          className="mt-4 rounded-lg bg-g400 px-4 py-2 text-center"
+        >
+          View all projects
         </Link>
 
-        <section className="my-20 grid grid-cols-2 gap-4">
-          <div className="flex items-start">
+        <section
+          className={cn('my-20 grid grid-cols-1 gap-4', 'sm:grid-cols-2')}
+        >
+          <div className="col-span-1 flex items-start">
             <div className="flex flex-col text-left">
-              <Heading variant={'h3'}>sometimes also write what I love</Heading>
-              <Link href={'/blog'} className=" my-2 text-sm underline">
+              <Heading variant={'h2'}>sometimes also write what I love</Heading>
+              <Link href={'/blog'} className="my-2 text-sm underline">
                 view all blog{' '}
               </Link>
             </div>
           </div>
-          <div className="">
+          <div className="col-span-1">
             <Carousel
               opts={{
                 align: 'start',
               }}
-              orientation="vertical"
-              className="h-full w-full"
+              orientation={isLargeScreen ? 'vertical' : 'horizontal'}
+              className="max-h-32 sm:max-h-full"
             >
-              <CarouselContent className="-mt-1 h-[200px]">
+              <CarouselContent className="-mt-1 h-36">
                 {Array.from({ length: 3 }).map((_, index) => (
                   <CarouselItem key={index} className="pt-1 md:basis-full">
-                    <div className="h-full p-1">
-                      <Card className="h-full rounded-lg">
-                        <CardContent className="flex h-full items-center justify-center p-0">
+                    <div className="max-h-32 sm:max-h-full">
+                      <Card className="max-h-32 rounded-lg sm:max-h-full">
+                        <CardContent className="flex h-32 items-center justify-center p-0 sm:max-h-full">
                           <Image
                             src={'https://picsum.photos/200/150'}
                             alt="blablab"
                             width={0}
-                            height={120}
-                            className="flex w-full "
+                            height={128}
+                            className="flex h-full w-full rounded-lg object-cover"
                           />
                         </CardContent>
                       </Card>
@@ -123,8 +146,8 @@ export default function Home() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
+              <CarouselPrevious className={isLargeScreen ? 'flex' : 'hidden'} />
+              <CarouselNext className={isLargeScreen ? 'flex' : 'hidden'} />
             </Carousel>
           </div>
         </section>
