@@ -8,7 +8,7 @@ interface HeadingProps
   asChild?: boolean
 }
 
-const headingVariants = cva('font-semibold', {
+const headingVariants = cva('font-bold', {
   variants: {
     variant: {
       h1: 'text-6xl',
