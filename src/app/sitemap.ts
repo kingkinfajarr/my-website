@@ -13,13 +13,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   })
 
-    // const posts = allPosts.map((post) => {
-    //   return {
-    //     url: `${websiteUrl}/blog/${post.slug}`,
-    //     lastModified: new Date(post.updatedAt),
-    //     priority: 0.5,
-    //   }
-    // })
+  // const posts = allPosts.map((post) => {
+  //   return {
+  //     url: `${websiteUrl}/blog/${post.slug}`,
+  //     lastModified: new Date(post.updatedAt),
+  //     priority: 0.5,
+  //   }
+  // })
 
   return [...navigations]
 }

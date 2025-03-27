@@ -15,8 +15,8 @@ export const navigationItems = [
     name: 'Projects',
     href: '/projects',
   },
-  {
-    name: 'Work Experiences',
-    href: '/work-experiences',
-  },
+  // {
+  //   name: 'Work Experiences',
+  //   href: '/work-experiences',
+  // },
 ]

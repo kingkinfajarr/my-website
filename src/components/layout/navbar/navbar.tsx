@@ -15,7 +15,8 @@ import { Menu } from 'react-feather'
 import { useNavigationState } from '@/hooks/use-nav-state'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib'
-import ToggleTheme from '@/components/theme/toggle'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const MobileNavigation = ({
   pathname,
@@ -30,7 +31,7 @@ const MobileNavigation = ({
     <Drawer open={isOpen} onOpenChange={setIsOpen}>
       <DrawerTrigger asChild>
         <div className="fixed right-0 top-0 z-20 mr-5 mt-5 block shadow-sm sm:hidden">
-          <div className="bg-g400 rounded-md p-2">
+          <div className="rounded-md bg-g300 p-2">
             <Menu className=" h-[1.2rem] w-[1.2rem] scale-100" />
           </div>
           <span className="sr-only">Open menu</span>
@@ -48,37 +49,6 @@ const MobileNavigation = ({
         </ul>
       </DrawerContent>
     </Drawer>
-
-    {/* <Sheet open={isOpen} onOpenChange={setIsOpen}>
-      <SheetTrigger asChild>
-        <Button
-          variant="outline"
-          size="icon"
-          className="fixed bottom-0 right-0 z-20 m-2 inline-flex shadow-sm sm:hidden"
-        >
-          <PanelTopOpen className="h-[1.2rem] w-[1.2rem] -rotate-90 scale-100" />
-          <span className="sr-only">Open menu</span>
-        </Button>
-      </SheetTrigger>
-      <SheetContent side="left" className="p-4">
-        <ul className="space-y-4 py-4">
-          {navigations.map(({ name, href, Icon }) => (
-            <li key={name}>
-              <NavigationLink
-                href={href}
-                currentPath={pathname}
-                onClick={() => setIsOpen(false)}
-              >
-                <Icon size={20} />
-                <span>{name}</span>
-              </NavigationLink>
-            </li>
-          ))}
-        </ul>
-      </SheetContent>
-    </Sheet> */}
-
-    {/* <ThemeToggle isMobile /> */}
   </>
 )
 
@@ -94,11 +64,16 @@ export const Navbar = ({ className }: NavbarProps) => {
     <>
       <nav
         className={cn(
-          'sticky top-0 z-50 mx-auto hidden items-center py-8 sm:flex',
+          'hidden items-center justify-between border-b border-zinc-300 border-opacity-80 py-4 sm:flex',
         )}
       >
-        <div className="bg-g400 rounded-full p-2 text-light shadow-md backdrop-blur-2xl">
-          <ul className=" flex w-full items-center rounded-lg">
+        {/* <div className="w-10 h-10 rounded-full bg-amber-100">
+        </div> */}
+        <Link href="/">
+          <Image src="/logo.png" alt="Logo" width={55} height={55} />
+        </Link>
+        <div className="p-2 text-light">
+          <ul className="flex w-full items-center">
             {navigations.map(({ name, href }) => (
               <li key={name}>
                 <NavigationLink
@@ -114,8 +89,6 @@ export const Navbar = ({ className }: NavbarProps) => {
             ))}
           </ul>
         </div>
-
-        {/* <ToggleTheme /> */}
       </nav>
 
       <MobileNavigation

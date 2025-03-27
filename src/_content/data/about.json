@@ -7,7 +7,14 @@
   "skills": [
     {
       "name": "Frontend",
-      "items": ["Vite", "Flutter", "Next.js", "React", "Tailwind CSS"]
+      "items": [
+        "Flutter",
+        "Next.js",
+        "React",
+        "Angular",
+        "Tailwind CSS",
+        "Vite"
+      ]
     },
     {
       "name": "Languages",
@@ -21,11 +28,15 @@
   "socials": [
     {
       "name": "LinkedIn",
-      "link": "https://www.linkedin.com/in/kingkinfajarr/"
+      "link": "https://linkedin.com/in/kingkinfajarr"
     },
     {
       "name": "GitHub",
       "link": "https://github.com/kingkinfajarr"
+    },
+    {
+      "name": "Instagram",
+      "link": "https://instagram.com/kingkinfajarr"
     }
   ]
 }

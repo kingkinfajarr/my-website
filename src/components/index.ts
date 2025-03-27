@@ -1,4 +1,3 @@
-export * from '../components/provider/provider'
 export * from '../components/layout/navbar/navbar'
 export * from '../components/layout/navbar/link'
 export * from '../components/layout/navbar/items'

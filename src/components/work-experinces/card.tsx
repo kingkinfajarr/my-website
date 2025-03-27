@@ -10,7 +10,7 @@ export const CardWork = ({ children, className }: WorkCardProps) => {
   return (
     <div
       className={cn(
-        'mb-4 w-full rounded-3xl bg-gradient-to-b from-green-900 to-green-500 p-8 backdrop-blur-sm',
+        'mb-4 w-full rounded-3xl bg-gradient-to-br from-green-900 to-green-50 p-8 backdrop-blur-sm',
         className,
       )}
     >

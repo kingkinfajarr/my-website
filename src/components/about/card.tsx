@@ -8,7 +8,7 @@ type AboutCardProps = {
 
 export const Card = ({ children, className }: AboutCardProps) => {
   return (
-    <div className={cn('rounded-md bg-secondary p-4', className)}>
+    <div className={cn('rounded-md border bg-transparent p-4', className)}>
       {children}
     </div>
   )

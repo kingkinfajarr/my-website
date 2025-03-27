@@ -1,22 +1,21 @@
-import { Skill, Works } from './src/types/mapper'
+import { Skill, Socials, Works } from './src/types/mapper'
 import {
   type ComputedFields,
   defineDocumentType,
-  LocalDocument,
   makeSource,
 } from 'contentlayer/source-files'
 import remarkGfm from 'remark-gfm'
 import remarkUnwrapImages from 'remark-unwrap-images'
 import rehypePrism from 'rehype-prism-plus'
-// import { generateBase64Image } from './src/lib/server/utils'
+import { generateBase64Image } from './src/lib/server/utils'
 
 const computedFields: ComputedFields = {
   thumbnailPlaceholder: {
     type: 'string',
-    // resolve: (doc: LocalDocument) => generateBase64Image(doc.thumbnail),
-    resolve(_) {
-      return 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'
-    },
+    resolve: async (doc) => await generateBase64Image(doc.thumbnail),
+    // resolve(_) {
+    //   return 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'
+    // },
   },
 }
 
@@ -26,7 +25,7 @@ const About = defineDocumentType(() => ({
   contentType: 'data',
   fields: {
     description: { type: 'list', of: { type: 'string' }, required: true },
-    skills: { type: 'list', of: Skill, required: true },
+    socials: { type: 'list', of: Socials, required: true },
   },
 }))
 
@@ -36,7 +35,19 @@ const Work = defineDocumentType(() => ({
   contentType: 'data',
   fields: {
     works: { type: 'list', of: Works, required: true },
-    
+  },
+}))
+
+const Skills = defineDocumentType(() => ({
+  name: 'Skills',
+  filePathPattern: 'about/**/*.mdx',
+  contentType: 'mdx',
+  fields: {
+    skills: {
+      type: 'list',
+      of: Skill,
+      required: true,
+    },
   },
 }))
 
@@ -47,6 +58,8 @@ const Project = defineDocumentType(() => ({
   fields: {
     title: { type: 'string', required: true },
     thumbnail: { type: 'string', required: true },
+    tags: { type: 'list', of: { type: 'string' }, required: true },
+    isSelected: { type: 'boolean', required: true },
     description: { type: 'string', required: true },
     github: { type: 'string' },
     demo: { type: 'string' },
@@ -77,8 +90,8 @@ const Project = defineDocumentType(() => ({
 }))
 
 export default makeSource({
-  contentDirPath: 'src/_contents',
-  documentTypes: [About, Project, Work],
+  contentDirPath: 'src/_content',
+  documentTypes: [About, Project, Work, Skills],
   mdx: {
     remarkPlugins: [remarkGfm, remarkUnwrapImages],
     rehypePlugins: [rehypePrism],

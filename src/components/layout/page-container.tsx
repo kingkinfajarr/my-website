@@ -15,7 +15,7 @@ export const PageContainer = ({
   withFooter,
   className,
 }: PageContainerProps) => (
-  <section className={cn('flex w-full flex-col', className)}>
+  <section className={cn('flex min-h-screen w-full flex-col', className)}>
     {withNavbar && <Navbar />}
     {children}
     {withFooter && <Footer />}
